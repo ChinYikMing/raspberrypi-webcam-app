@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>實時監視系統</title>
+    <style>
+	#stream {
+		margin-bottom: 10px;
+	}
+    </style>
+  </head>
+  <body>
+    <h1>實時監視系統</h1>
+    <img id="stream" src="{{ url_for('normalMode') }}">
+    <form method="get" action="{{ url_for('changePeopleMode') }}">
+        <input type="submit" value="切換監視模式" />
+    </form>
+    <form method="get" action="{{ url_for('saveFrame') }}">
+        <input type="submit" value="保存影像" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <h1>實時監視系統</h1>
+    <h3>影像保存成功, 檔名為 {{ filename }}</h3>
+    <form method="get" action="{{ url_for('index') }}">
+        <input type="submit" value="回到普通監視模式" />
+    </form>
+    <form method="get" action="{{ url_for('changePeopleMode') }}">
+        <input type="submit" value="回到人物監視模式" />
+    </form>
+  </body>
+</html>

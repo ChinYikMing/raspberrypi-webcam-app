@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>實時監視系統</title>
+    <style>
+	#stream {
+		margin-bottom: 10px;
+	}
+    </style>
+  </head>
+  <body>
+    <h1>實時監視系統(人物偵測模式)</h1>
+    <img id="stream" src="{{ url_for('peopleMode') }}">
+    <form method="get" action="{{ url_for('changeNormalMode') }}">
+        <input type="submit" value="切換監視模式" />
+    </form>
+  </body>
+</html> 
